@@ -31,6 +31,9 @@ function createAccodionData() {
         <h3>${dataItem.question}</h3>
         <i class="fa-solid fa-arrow-up"></i>
         </div>
+        <div class="accordion_content">
+        <p>${dataItem.answer}</p>
+        </div>
         </div>
         `
   ).join(" ");
