@@ -29,7 +29,7 @@ function createAccodionData() {
         <div class="accordion_item">
         <div class="accordion_title">
         <h3>${dataItem.question}</h3>
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-down"></i>
         </div>
         <div class="accordion_content">
         <p>${dataItem.answer}</p>
@@ -41,7 +41,7 @@ function createAccodionData() {
 
 createAccodionData();
 
-const getAccordionTitles= document.querySelectorAll('.accordion');
+const getAccordionTitles= document.querySelectorAll('.accordion_title');
 
 console.log(getAccordionTitles);
 
