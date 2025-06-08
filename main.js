@@ -40,3 +40,23 @@ function createAccodionData() {
 }
 
 createAccodionData();
+
+const getAccordionTitles= document.querySelectorAll('.accordion');
+
+console.log(getAccordionTitles);
+
+getAccordionTitles.forEach(currentItem => {
+  currentItem.addEventListener('click', (event)=> {
+    if(currentItem.classList.contains('active')){
+      currentItem.classList.remove('active')
+    }else{
+      let getAlreadyAddedActiveClasses = document.querySelectorAll('.active');
+
+      getAlreadyAddedActiveClasses.forEach(currentActiveItem => {
+        currentActiveItem.classList.remove('active')
+      })
+
+      currentItem.classList.add('active')
+    }
+  })
+})
